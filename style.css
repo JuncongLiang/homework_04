@@ -1,0 +1,54 @@
+#mainForm{
+    margin-left: 25%;
+    width: 50%;
+    text-align: left;
+    padding: 50px 50px 100px 50px;
+}
+
+
+
+.timer{
+    float:right;
+}
+
+
+#timerDisplay{
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-right: 10px;
+    float: right;
+}
+
+#timesUpDiv{
+    color: red;
+    float: right;
+    margin-right: 10px;
+}
+
+.hide{
+    display: none;
+    
+}
+
+div#startScreen{
+    background: purple;
+}
+div#questions{
+    background: lightskyblue;
+} 
+
+h2{
+    color: #17a2b8;
+    padding-bottom: 15px;
+}
+#feedback {
+    border-top: double;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+
+input.myRadio{
+    margin-right: 3px;
+}
+
+

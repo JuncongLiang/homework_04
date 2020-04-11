@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Capital Quiz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!--This is the main page-->
+    <a href="#" id = "viewHighscore" class = "">View Highscore</a>
+    <div id="timesUpDiv" class="hide">
+        <p>-10 seconds!</p>
+                   
+    </div>
+    <p class="timer">Time: <span id="timerDisplay"></span></p>
+
+    <p class="Score">Score: <span id="scoreCounter"></span></p>
+    
+    
+    <form id="mainForm">
+        <div id="startScreen" class="display">
+          <h1 class="capitalQuiz">Welcome!</h1>
+        <p>This quiz is about State's capital, you have 90 second. Good Luck!</p>
+          <button id="startBtn" class = "btn btn-success">Start</button>
+
+        </div>
+
+<!--This is the Questions page--> 
+
+        <div id="questions" class="hide">
+            <h2 id="questionTitle"></h2>
+                <div id="answerChoices">
+
+                </div>
+                
+        </div>
+
+        <div id="feedback" class="feedback hide">
+            <p id="solution"></p>
+            
+        </div>
+        <div id="nextDiv" class = "hide">
+            <button id="nextBtn" class = "btn btn-info">Next</button>
+        </div>
+
+<!--This is the Final page-->     
+        <div id="finalDiv" class="hide">
+            <h3>All Done!</h3>
+            <p class="Score">Your Final Score: <span id="scoreCounter2"></span></p>
+            <label for="name">Enter Your Name/Initials:</label><br>
+            <input type="text" id="userInitials" name="userInitials" value="">
+            <input type="submit" id="initialBtn" class = "btn btn-success">
+            
+        </div>
+
+<!--This is the highscore page-->
+        <div id="highscoreDiv" class="hide">
+            <h3>Highscores</h3>
+            <p id = "highscoresResults"></p><br><br>
+            <input type="submit" id="goBackbtn" value="Go Back" onClick="javascript:history.go(-1)" class = "btn btn-secondary">
+            <input type="submit" id="clearScoreBtn" value="Clear Highcores" class = "btn btn-secondary">
+            
+        </div>
+        
+        
+    </form>
+
+     
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="questions.js"></script>
+</body>
+
+</html>
